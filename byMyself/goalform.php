@@ -2,53 +2,71 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test Form</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css">
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-
+        <link rel="stylesheet" href="style.css">
+        <script src="">
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color","lightgreen")
+                });
+            });
         </script>
     </head>
 
     <body>
-        <div class="container mt-3">
+
+        
+        <div class="container mt-3 signup-container">
             <h3 class="title">Form Validation</h3>
+            
             <form class="was-validated" action="goalformsave.php" method="post">
-                <div class="signup-info">
-                    <div class="input-group">
-                        <label for="username">User Name: </label><br>
+                <!-- <div class="signup-info"> -->
+                    <div class="form-floating mb-3 mt-3">
+                        
+                        <!-- <br> -->
                         <!-- <span class="input-group-text">@</span> -->
-                        <input type="text" class="text-box" name="uname" id="username" value="" placeholder="username">
+                        <input type="text" class="form-control" name="username" id="uname" value="" placeholder="username" required>
+                        <!-- class="text-box" mean?-->
+                        <label for="uname" class="form-label">User Name: </label>
+                        <span class="error"><p></p></span>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="email">Email: </label><br>
-                        <input type="text" class="text-box" name="eml" id="email" value="" placeholder="email">
+                    <div class="form-floating mb-3">
+                        
+                        <input type="text" class="form-control" name="eml" id="email" value="" placeholder="email" required>
                         <!-- <span class="input-group-text">@example.com</span> -->
+                        <label for="email" class="form-label">Email: </label>
+                        <span class="error"><p></p></span>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="password">Password: </label><br>
-                        <input type="password" class="text-box" id="password" name="pwd" value="" placeholder="Password">
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" name="pwd" value="" placeholder="Password" required>
+                        <label for="password" class="form-label">Password: </label>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="reason">Reason For Joining:</label><br>
-                        <input type="radio" name="reason" value="Want to do">Want to do
-                        <input type="radio" name="reason" value="Want to know">Want to know
-                        <input type="radio" name="reason" value="Other">Other            
+                    <div class="mb-3">
+                        <label class="title" for="reason">Reason For Joining:</label>
+                        <input type="radio" class="form-check-input" name="reason" id="radio1" value="Want to do" required>
+                        <label class="form-check-label" for="radio1">Want to do</label>
+                        <input type="radio" class="form-check-input" name="reason" id="radio2" value="Want to know" required>
+                        <label class="form-check-label" for="radio2">Want to know</label>
+                        <input type="radio" class="form-check-input" name="reason" id="radio3" value="Other" required>
+                        <label class="form-check-label" for="radio3">Other </label>
+                        <span class="error"><p></p></span>
                     </div>
 
-                    <div class="form-chack">
-                        <input type="checkbox" class="form-check-input" id="myCheck" name="remember">
-                        <label class="form-check-label" for="mycCheck">I agree.</label>
+                    <div class="form-chack mb-3">
+                        <input type="checkbox" class="form-check-input" id="myCheck" name="remember" required>
+                        <label class="form-check-label" for="myCheck">I agree.</label>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Check this checkbox to continue.</div>
                     </div>
@@ -74,10 +92,10 @@
                     </div> -->
                     
                     
-                </div>
+                <!-- </div> -->
 
                 <div class="submit-button">
-                    <button class="submit"><P>SUBMIT</P></button>
+                    <button class="btn btn-primary"><P>SUBMIT</P></button>
                 </div>
 
             </form>

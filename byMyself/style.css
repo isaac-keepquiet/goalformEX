@@ -1,15 +1,19 @@
-/* .signup-container{
+.title{
+    color:#fff;
+}
+
+.signup-container{
     background-color: #3a3a3a;
     margin: auto;
-    width: 500px;
-    height: 520px;
+    width: 800px;
+    height: 600px;
     padding: auto;
     border-radius: 25px;
-    color: #fff;
+    color: #3a3a3a;
     text-align: center;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -24,4 +28,8 @@
 
 .submit-button{
     margin-top: 10px;
-} */
+}
+
+.error{
+    color:#ff0000;
+}
