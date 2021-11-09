@@ -17,6 +17,10 @@
     </head>
 
     <body>
+        <?php
+            $name = $email = $gender = $comment = $website = "";
+            $nameErr = $emailErr = $genderErr = $websiteErr = "";
+        ?>
 
         
         <div class="container mt-3 signup-container">
@@ -31,17 +35,23 @@
                         <input type="text" class="form-control" name="username" id="uname" value="" placeholder="username" required>
                         <!-- class="text-box" mean?-->
                         <label for="uname" class="form-label">User Name: </label>
-                        <span class="error"><p></p></span>
+
+                        <!-- <span class="error"><?php echo $nameErr;?></span>
+                        <span class="error"><p></p></span> -->
+
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
 
                     <div class="form-floating mb-3">
                         
-                        <input type="text" class="form-control" name="eml" id="email" value="" placeholder="email" required>
+                        <input type="email" class="form-control" name="eml" id="email" value="" placeholder="email" required>
                         <!-- <span class="input-group-text">@example.com</span> -->
                         <label for="email" class="form-label">Email: </label>
-                        <span class="error"><p></p></span>
+
+                        <!-- <span class="error"><?php echo $emailErr;?></span>
+                        <span class="error"><p></p></span> -->
+
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
@@ -100,6 +110,12 @@
 
             </form>
         </div>
-        
+        <!-- <script src="">
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color","lightgreen");
+                });
+            });
+        </script> -->
     </body>
 </html>
