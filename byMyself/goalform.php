@@ -18,8 +18,8 @@
 
     <body>
         <?php
-            $name = $email = $gender = $comment = $website = "";
-            $nameErr = $emailErr = $genderErr = $websiteErr = "";
+            $name = $email = "";
+            $nameErr = $emailErr = "";
         ?>
 
         
