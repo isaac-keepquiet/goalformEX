@@ -10,7 +10,7 @@
         <script src="">
             $(document).ready(function(){
                 $("input").focus(function(){
-                    $(this).css("background-color","lightgreen");
+                    $(this).css("background-color","lightgreen")
                 });
             });
         </script>
