@@ -19,7 +19,7 @@
 
 .form-control,
 .form-check-input{
-    background-color: #7f7f7f;
+    /* background-color: #7f7f7f; */
 }
 
 /* .text-box{
@@ -29,6 +29,7 @@
 
 /* .input-group{
     margin: 5px;
+    color: #fff;
 } */
 
 .submit-button{
@@ -36,5 +37,9 @@
 }
 
 .error{
-    color:#ff0000;
+    color:#48ff00;
+}
+
+.testColor{
+    color: #4bbda4;
 }

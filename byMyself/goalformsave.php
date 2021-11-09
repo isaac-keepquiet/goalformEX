@@ -5,5 +5,5 @@
     $email = $_POST['eml'];
     $password = $_POST['pwd'];
 
-    var_dump($user, $eml, $pwd);
+    var_dump($user, $email, $password);
 ?>
