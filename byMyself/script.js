@@ -10,8 +10,14 @@ $(document).ready(function(){
     });
 
     //function（什么）来启动函数
+    // $a =
+
     $("button").click(function(){
-        alert("Invalid email format！")
+        // if($().val() == ''){
+        //     ? = ?;
+            alert("Invalid email format！");
+        // }
+        
     });
 
 });
