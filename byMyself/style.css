@@ -17,10 +17,11 @@
     flex-direction: column;
 }
 
-.form-control,
+/* 
+.form-control, 
 .form-check-input{
-    /* background-color: #7f7f7f; */
-}
+    background-color: #7f7f7f;
+} */
 
 /* .text-box{
     width: 300px;
