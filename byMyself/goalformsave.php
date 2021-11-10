@@ -6,32 +6,41 @@
     $password = $_POST['pwd'];
     var_dump($user, $email, $password);
 
-    class input{
-        $a = ["abc", "123"];
-        foreach($a as $name){
-            if($user == $name){
-                die("User name disabled");
-            }
-            // else{
-            //     if(!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-            //         $nameErr = "Only letters and white space allowed";
-            //     }
-            // }
-        }
+    function post($user){
 
+    }
+
+    class input{
+        
+        // 检查用户名中的字符
         function post($user){
             if(!preg_match("/^[a-zA-Z-' ]*$/",$name)){
                 return false;
             }
+
+            // 排除吧被占用的用户名
+            $a = ["abc", "123"];
+
+            foreach($a as $name){
+                if($user == $name){
+                    return false;
+                    // die("User name disabled");
+                }
+                // else{
+                //     if(!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+                //         $nameErr = "Only letters and white space allowed";
+                //     }
+                // }
+            }
+            return true;
         }
-        return ture;
     }
     $input = new input();
     var_dump($input->post());
 
     $uname = $input->post($user);
     if ($uname == false){
-        die("Only letters and white space allowed")
+        die("Only letters and white space allowed");
     }
 
 
