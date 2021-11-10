@@ -9,9 +9,8 @@ $(document).ready(function(){
         $(this).css("background-color", "#fff");
     });
 
-    //function（什么）来启动函数
+    //function写入什么条件来启动函数
     // $a =
-
     $("button").click(function(){
         // if($().val() == ''){
         //     ? = ?;
