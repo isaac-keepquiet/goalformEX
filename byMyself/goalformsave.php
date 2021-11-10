@@ -6,15 +6,15 @@
     $password = $_POST['pwd'];
     var_dump($user, $email, $password);
 
-    function post($user){
-
-    }
+    // function post($user){
+    // }
 
     class input{
         
         // 检查用户名中的字符
         function post($user){
             if(!preg_match("/^[a-zA-Z-' ]*$/",$name)){
+                echo "run";
                 return false;
             }
 
@@ -35,6 +35,7 @@
             return true;
         }
     }
+
     $input = new input();
     var_dump($input->post());
 

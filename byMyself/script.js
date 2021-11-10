@@ -13,7 +13,7 @@ $(document).ready(function(){
     // $a =
     $("button").click(function(){
         // if($().val() == ''){
-        //     ? = ?;
+        
             alert("Invalid email format！");
         // }
         
