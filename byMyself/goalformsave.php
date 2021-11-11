@@ -1,48 +1,77 @@
 <?php
     // var_dump()
 
+    // if($_SERVER["REQUEST_METHOD"] == "POST"){
+    //     $user = test_input($_POST['username']);
+    //     $email = test_input($_POST['email']);
+    //     $password = test_input($_POST['password']);
+    // }
     $user = $_POST['username'];
-    $email = $_POST['eml'];
-    $password = $_POST['pwd'];
-    var_dump($user, $email, $password);
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
 
     // function post($user){
     // }
 
-    class input{
-        
-        // 检查用户名中的字符
-        function post($user){
-            if(!preg_match("/^[a-zA-Z-' ]*$/",$name)){
-                echo "run";
-                return false;
-            }
-
-            // 排除吧被占用的用户名
-            $a = ["abc", "123"];
-
-            foreach($a as $name){
-                if($user == $name){
-                    return false;
-                    // die("User name disabled");
-                }
-                // else{
-                //     if(!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-                //         $nameErr = "Only letters and white space allowed";
-                //     }
-                // }
-            }
-            return true;
+    // 检查用户名中的字符
+    function post($user){
+        if(!preg_match("/^[a-zA-Z-' ]*$/",$user)){
+            // echo "Only letters and white space allowed";
+            return false;
         }
+
+        // 排除吧被占用的用户名
+        $a = ["abc", "123"];
+
+        foreach($a as $name){
+            if($user == $name){
+                return false;
+                // echo "User name disabled";
+            }
+            // else{
+            //     if(!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+            //         $nameErr = "Only letters and white space allowed";
+            //     }
+            // }
+        }
+
+        // if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        //     return false;
+        // }
+
+        return true;
     }
 
-    $input = new input();
-    var_dump($input->post());
+    // function post($email){
+    //     if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    //         return false;
+    //     }
+    // }
 
-    $uname = $input->post($user);
-    if ($uname == false){
-        die("Only letters and white space allowed");
+    $uname = post($user);
+    // $uemail = post($email);
+    if($uname == false){
+        die("User name disabled");
     }
+    // if($uemail == false){
+    //     die("Invalid email format");
+    // }
+
+
+    // var_dump($user, $email, $password);
+    var_dump($_POST);
+
+
+    //class order
+    // class input{}
+    // $input = new input();
+    // var_dump($input->post());
+
+    // $uname = $input->post($user);
+    // if ($uname == false){
+    //     die("Only letters and white space allowed");
+    // }
 
 
 

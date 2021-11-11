@@ -33,9 +33,9 @@
                         
                         <!-- <br> -->
                         <!-- <span class="input-group-text">@</span> -->
-                        <input type="text" class="form-control" name="username" id="uname" value="" placeholder="username" required>
+                        <input type="text" class="form-control" name="username" id="username" value="" placeholder="username" required>
                         <!-- class="text-box" mean?-->
-                        <label for="uname" class="form-label">User Name: </label>
+                        <label for="username" class="form-label">User Name: </label>
 
                         <!-- <span class="error"><?php echo $nameErr;?></span>
                         <span class="error"><p></p></span> -->
@@ -46,7 +46,7 @@
 
                     <div class="form-floating mb-3">
                         
-                        <input type="email" class="form-control" name="eml" id="email" value="" placeholder="email" required>
+                        <input type="email" class="form-control" name="email" id="email" value="" placeholder="email" required>
                         <!-- <span class="input-group-text">@example.com</span> -->
                         <label for="email" class="form-label">Email: </label>
 
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="password" name="pwd" value="" placeholder="Password" required>
+                        <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password" required>
                         <label for="password" class="form-label">Password: </label>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>

@@ -11,11 +11,16 @@ $(document).ready(function(){
 
     //function写入什么条件来启动函数
     // $a =
+    
+    // userName = prompt()
+
+    // const userName = "abc/";
+
     $("button").click(function(){
-        // if($().val() == ''){
-        
+
+        if(preg_match("/^[a-zA-Z-' ]*$/", "userName")>0){        
             alert("Invalid email format！");
-        // }
+        }
         
     });
 
