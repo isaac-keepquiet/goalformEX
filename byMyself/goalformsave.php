@@ -15,7 +15,7 @@
     // }
 
     // 检查用户名中的字符
-    function post($user){
+    function post($user, $email){
         if(!preg_match("/^[a-zA-Z-' ]*$/",$user)){
             // echo "Only letters and white space allowed";
             return false;
@@ -36,9 +36,9 @@
             // }
         }
 
-        // if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        //     return false;
-        // }
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            return false;
+        }
 
         return true;
     }
@@ -49,8 +49,8 @@
     //     }
     // }
 
-    $uname = post($user);
-    // $uemail = post($email);
+    $uname = post($user, $email);
+    // $uemsail = post($email);
     if($uname == false){
         die("User name disabled");
     }
