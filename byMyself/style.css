@@ -1,15 +1,15 @@
 .title{
-    color:#fff;
+    color:#000
 }
 
 .signup-container{
-    background-color: #3a3a3a;
+    /* background-color: #3a3a3a; */
     margin: auto;
     width: 800px;
     height: 600px;
     padding: auto;
     border-radius: 25px;
-    color: #3a3a3a;
+    /* color: #3a3a3a; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@
 }
 
 .error{
-    color:#48ff00;
+    color:#ff0000;
 }
 
 .testColor{

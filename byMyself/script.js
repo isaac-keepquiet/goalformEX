@@ -1,4 +1,8 @@
-
+$.validator.setDefaults({
+    submitHandler: function() {
+        alert("submitted!");
+    }
+});
 
 // 可以通过CSS更改input background-color，但是focus函数无法更改背景颜色。疑似与bootstrap冲突
 $(document).ready(function(){
@@ -16,13 +20,13 @@ $(document).ready(function(){
 
     // const userName = "abc/";
 
-    $("button").click(function(){
-
-        if(preg_match("/^[a-zA-Z-' ]*$/", "userName")>0){        
-            alert("Invalid email format！");
-        }
+    // $("button").click(function(){
+        // if(preg_match("/^[a-zA-Z-' ]*$/", "userName")>0){
+            // preventDefault();
+            // alert("Invalid email format！");
+        // }
         
-    });
+    // });
 
 });
 
