@@ -18,7 +18,7 @@
     <p></p>   
     <form action="datasave.php" method="post">
       <!-- <input type="text" name="name" id="name"> -->
-      <table class="table table-bordered table-striped dataTable" id="example1" action="datasave.php" method="post" role="grid" aria-describedby="example1_info">
+      <table class="table table-bordered table-striped dataTable" id="example1" role="grid" aria-describedby="example1_info">
         <thead>
           <tr>
             <th>Name</th>
@@ -30,21 +30,21 @@
         <tbody>
           <tr>
             <td><p>Apple</p></td>
-            <td><input type="number" class="num-input pr price" id="p1" name="points" onchange="add_to_total(this)" min="0" max="100"></td>
-            <td><input type="number" class="num-input pr qty" id="qyt1" name="points" onchange="add_to_total(this)" min="0" max="1000"></td>
-            <td><input type="number" name=""  class="num-input pr total_price" id="totalprice1" oninput="add_all_total(this)"</td>
+            <td><input type="number" class="num-input pr price" id="p1" name="points1" onchange="add_to_total(this)" min="0" max="100"></td>
+            <td><input type="number" class="num-input pr qty" id="qyt1" name="points2" onchange="add_to_total(this)" min="0" max="1000"></td>
+            <td><input type="number" name="total1"  class="num-input pr total_price" id="totalprice1" oninput="add_all_total(this)"</td>
           </tr>
           <tr>
             <td><p>Watermelon</p></td>
-            <td><input type="number" class="num-input pr price" id="p2" name="points" onchange="add_to_total(this)" min="0" max="100"></td>
-            <td><input type="number" class="num-input pr qty" id="qyt2" name="points" onchange="add_to_total(this)" min="0" max="1000"></td>
-            <td><input type="number" name=""  class="num-input pr total_price" id="totalprice2" oninput="add_all_total(this)"></td>
+            <td><input type="number" class="num-input pr price" id="p2" name="points3" onchange="add_to_total(this)" min="0" max="100"></td>
+            <td><input type="number" class="num-input pr qty" id="qyt2" name="points4" onchange="add_to_total(this)" min="0" max="1000"></td>
+            <td><input type="number" name="total2"  class="num-input pr total_price" id="totalprice2" oninput="add_all_total(this)"></td>
           </tr>
           <tr>
             <td><p>Orenge</p></td>
-            <td><input type="number" class="num-input pr price" id="p3" name="points" onchange="add_to_total(this)" min="0" max="100"></td>
-            <td><input type="number" class="num-input pr qty" id="qyt3" name="points" onchange="add_to_total(this)" min="0" max="1000"></td>
-            <td><input type="number" name=""  class="num-input pr total_price" id="totalprice3" oninput="add_all_total(this)"></td>
+            <td><input type="number" class="num-input pr price" id="p3" name="points5" onchange="add_to_total(this)" min="0" max="100"></td>
+            <td><input type="number" class="num-input pr qty" id="qyt3" name="points6" onchange="add_to_total(this)" min="0" max="1000"></td>
+            <td><input type="number" name="total3"  class="num-input pr total_price" id="totalprice3" oninput="add_all_total(this)"></td>
           </tr>
           <tr>
             <td><h3>Total</h3></td>

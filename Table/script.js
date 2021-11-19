@@ -16,15 +16,15 @@ function add_to_total(nu){
 
 function add_all_total(sum){
 
-    // var sum = 0;
+    var sum = 0;
 
-    // $("#tab td").each(function(){
+    $("#tab td").each(function(){
 		
-	// 	var num = parseInt($(this).find("input[class*=text_box]").val());
-	// 	var price = parseFloat($(this).find("span[class*=price]").text());
-	// 	sum += num*price;
-	// })
-	// $("#total").html(sum.toFixed(2));
+		var num = parseInt($(this).find("input[class*=text_box]").val());
+		var price = parseFloat($(this).find("span[class*=price]").text());
+		sum += num*price;
+	})
+	$("#total").html(sum.toFixed(2));
 
 
     // var total_1 = document.getElementById("totalprice1");
