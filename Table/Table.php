@@ -29,27 +29,45 @@
         </thead>
         <tbody>
           <tr>
-            <td><p>Apple</p></td>
-            <td><input type="number" class="num-input pr price" id="p1" name="points1" onchange="add_to_total(this)" min="0" max="100"></td>
-            <td><input type="number" class="num-input pr qty" id="qyt1" name="points2" onchange="add_to_total(this)" min="0" max="1000"></td>
-            <td><input type="number" name="total1"  class="num-input pr total_price" id="totalprice1" oninput="add_all_total(this)"</td>
+            <td>
+              <select class="input-area" name="Select1" id="Select1">
+                <option value="Apple">Apple</option>
+                <option value="Watermelon">Watermelon</option>
+                <option value="Orange">Orange</option>
+              </select>
+            </td>
+            <td><input type="number" class="input-area pr price" id="p1" name="price1" onchange="add_to_total(this)" min="0" max="100"></td>
+            <td><input type="number" class="input-area pr qty" id="qyt1" name="qyt1" onchange="add_to_total(this)" min="0" max="1000"></td>
+            <td><input type="number" name="total1"  class="input-area pr total_price" id="totalprice1" oninput="add_all_total(this)"</td>
           </tr>
           <tr>
-            <td><p>Watermelon</p></td>
-            <td><input type="number" class="num-input pr price" id="p2" name="points3" onchange="add_to_total(this)" min="0" max="100"></td>
-            <td><input type="number" class="num-input pr qty" id="qyt2" name="points4" onchange="add_to_total(this)" min="0" max="1000"></td>
-            <td><input type="number" name="total2"  class="num-input pr total_price" id="totalprice2" oninput="add_all_total(this)"></td>
+            <td>
+              <select class="input-area" name="Select2" id="Select2">
+                <option value="Apple">Apple</option>
+                <option value="Watermelon">Watermelon</option>
+                <option value="Orange">Orange</option>
+              </select>
+            </td>
+            <td><input type="number" class="input-area pr price" id="p2" name="price2" onchange="add_to_total(this)" min="0" max="100"></td>
+            <td><input type="number" class="input-area pr qty" id="qyt2" name="qyt2" onchange="add_to_total(this)" min="0" max="1000"></td>
+            <td><input type="number" name="total2"  class="input-area pr total_price" id="totalprice2" oninput="add_all_total(this)"></td>
           </tr>
           <tr>
-            <td><p>Orenge</p></td>
-            <td><input type="number" class="num-input pr price" id="p3" name="points5" onchange="add_to_total(this)" min="0" max="100"></td>
-            <td><input type="number" class="num-input pr qty" id="qyt3" name="points6" onchange="add_to_total(this)" min="0" max="1000"></td>
-            <td><input type="number" name="total3"  class="num-input pr total_price" id="totalprice3" oninput="add_all_total(this)"></td>
+            <td>
+              <select class="input-area" name="Select3" id="Select3">
+                <option value="Apple">Apple</option>
+                <option value="Watermelon">Watermelon</option>
+                <option value="Orange">Orange</option>
+              </select>
+            </td>
+            <td><input type="number" class="input-area pr price" id="p3" name="price3" onchange="add_to_total(this)" min="0" max="100"></td>
+            <td><input type="number" class="input-area pr qty" id="qyt3" name="qyt3S" onchange="add_to_total(this)" min="0" max="1000"></td>
+            <td><input type="number" name="total3"  class="input-area pr total_price" id="totalprice3" oninput="add_all_total(this)"></td>
           </tr>
           <tr>
             <td><h3>Total</h3></td>
             <td></td>
-            <td><td><input type="number" name=""  class="num-input pr all_total_price" id="alltotalprice"></td></td>
+            <td><td><input type="number" name=""  class="input-area pr all_total_price" id="alltotalprice"></td></td>
           </tr>
         </tbody>
         
