@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>datasaveFristPHP</title>
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -40,22 +40,46 @@
     //     }
     echo '<tbody>';
      echo '<tr>';
-      echo '<td class="input-area pr">'.($a0).'</td>';
-      echo '<td class="input-area pr">'.($a1).'</td>';
-      echo '<td class="input-area pr">'.($a2).'</td>';
-      echo '<td class="input-area pr">'.($a3).'</td>';
+      echo '<td class="input-area pr">';
+      echo $a0;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a1;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a2;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a3;
+      echo '</td>';
      echo '</tr>';
      echo '<tr>';
-      echo '<td class="input-area pr">'.($a4).'</td>';
-      echo '<td class="input-area pr">'.($a5).'</td>';
-      echo '<td class="input-area pr">'.($a6).'</td>';
-      echo '<td class="input-area pr">'.($a7).'</td>';
+      echo '<td class="input-area pr">';
+      echo $a4;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a5;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a6;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a7;
+      echo '</td>';
      echo '</tr>';
      echo '<tr>';
-      echo '<td class="input-area pr">'.($a8).'</td>';
-      echo '<td class="input-area pr">'.($a9).'</td>';
-      echo '<td class="input-area pr">'.($a10).'</td>';
-      echo '<td class="input-area pr">'.($a11).'</td>';
+      echo '<td class="input-area pr">';
+      echo $a8;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a9;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a10;
+      echo '</td>';
+      echo '<td class="input-area pr">';
+      echo $a11;
+      echo '</td>';
      echo '</tr>';
      // echo '<tr>';
       // echo '<td><h3>Total</h3></td>';

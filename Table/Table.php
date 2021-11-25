@@ -17,8 +17,9 @@
   <h2>Fruit Price Table</h2>
   <p></p>   
   <!-- <form action="datasaveFristPHP.php" method="post"> -->
-  <form action="datasaveIncludeForLoop.php" method="post">
-  <!-- <form action="datasaveFristHTML.php" method="post"> -->
+  <form action="datasaveFristHTML.php" method="post">
+  <!-- <form action="datasaveIncludeForLoop.php" method="post"> -->
+
    <!-- <input type="text" name="name" id="name"> -->
    <table class="table table-bordered table-striped dataTable" id="example1" role="grid" aria-describedby="example1_info">
     <thead>
